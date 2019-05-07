@@ -1,21 +1,27 @@
 <template>
-  <div id="app">
+    <div id="app">
 
-<teacher/>
-    <students />
+
+<headers/>
+
+<contents/>
+<footers/>
   </div>
 </template>
 
 <script>
-import students from './components/students.vue'
-import teacher from './components/teacher.vue'
+
+import header from './components/header.vue'
+import footer from './components/footer.vue'
+import content from './components/content.vue'
 
 export default {
-  name: 'app',
+   name: 'app',
+ 
   components: {
-   students,
-   teacher:teacher
-
+     "footers":footer,
+    "contents": content,
+   "headers": header,
   }
 }
 </script>
